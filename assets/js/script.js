@@ -1,0 +1,1 @@
+var weatherKey= '14c3dd75a39dcc09a72473e3cdf1eb92';
