@@ -11,8 +11,61 @@
     <title>Weather Forecast</title>
 </head>
 <body>
-    <header> Get Your Weather Forecast Here</header>
-    
+    <header>
+    <h1 id="header">Weather</h1>
+    </header>
+    <aside>
+        <div class="jumbotron jumbotron-fluid">
+            <div class="container">
+              <h1 class="display-4">Forecast for today</h1>
+              <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
+            </div>
+            <div id="search-card" class="card col-3">
+                <h2>Search for a City:</h2>
+                <input id="search-bar" type="text" placeholder="Enter a City">
+                <input id="submit-btn" type="submit" class="btn btn-primary" value="Search">
+              <hr>
+              <div class="search-history flex-column"></div>
+            </div>
+          </div>
+    </aside>
+    <main>
+        <div class="forecast-container">
+            <h3>5-Day Forecast:</h3>
+            <div id="card-container" class="d-flex flex-wrap justify-content-around">
+              <div id="day-1" class="card daily-forecast">
+                <h4 data-city="" data-date="">NYC</h4>
+                <p id="day-1-temp">Temp: F</p>
+                <p id="day-1-wind">Wind: MPH</p>
+                <p id="day-1-humidity">Humidity: %</p>
+              </div>
+              <div id="day-1" class="card daily-forecast">
+                <h4 data-city="" data-date="">NYC</h4>
+                <p id="day-1-temp">Temp: F</p>
+                <p id="day-1-wind">Wind: MPH</p>
+                <p id="day-1-humidity">Humidity: %</p>
+              </div>
+              <div id="day-1" class="card daily-forecast">
+                <h4 data-city="" data-date="">NYC</h4>
+                <p id="day-1-temp">Temp: F</p>
+                <p id="day-1-wind">Wind: MPH</p>
+                <p id="day-1-humidity">Humidity: %</p>
+              </div>
+              <div id="day-1" class="card daily-forecast">
+                <h4 data-city="" data-date="">NYC</h4>
+                <p id="day-1-temp">Temp: F</p>
+                <p id="day-1-wind">Wind: MPH</p>
+                <p id="day-1-humidity">Humidity: %</p>
+              </div>
+              <div id="day-1" class="card daily-forecast">
+                <h4 data-city="" data-date="">NYC</h4>
+                <p id="day-1-temp">Temp: F</p>
+                <p id="day-1-wind">Wind: MPH</p>
+                <p id="day-1-humidity">Humidity: %</p>
+              </div>
+            </div>
+          </div>
+    </main>
 </body>
 <script src="./assets/js/script.js"></script>
 </html>
