@@ -48,18 +48,20 @@ function getForecast(){
     fetch (forecastUrl).then((response)=> response.json())
     .then((data)=>{
         console.log(data);
-        var dayOne= data.list[0].main
-        var condOne= data.list[0].weather[0].description
-        var dayTwo= data.list[8].main
-        var condTwo= data.list[8].weather[0].description
-        var dayThree= data.list[16].main
-        var condThree= data.list[16].weather[0].description
-        var dayFour=data.list[24].main
-        var condFour= data.list[24].weather[0].description
-        var dayFive=data.list[32].main
-        var condFive= data.list[32].weather[0].description
+        var date = moment(data.dt_txt).format('MM/DD/YYYY')
+        var dayOne= data.list[4].main
+        var condOne= data.list[4].weather[0].description
+        var dayTwo= data.list[12].main
+        var condTwo= data.list[12].weather[0].description
+        var dayThree= data.list[20].main
+        var condThree= data.list[20].weather[0].description
+        var dayFour=data.list[28].main
+        var condFour= data.list[28].weather[0].description
+        var dayFive=data.list[36].main
+        var condFive= data.list[36].weather[0].description
         console.log(dayOne);
         console.log(condOne);
+        console.log(data.city.name);
         document.getElementById('day-1-temp').append(`Temp: ${dayOne.temp} F`);
         document.getElementById('day-1-conditions').append(`Conditions: ${condOne} `);
         document.getElementById('day-1-humidity').append(`Humidity: ${dayOne.humidity} `);
