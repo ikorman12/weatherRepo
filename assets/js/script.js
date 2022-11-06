@@ -3,7 +3,7 @@ var weatherKey= '14c3dd75a39dcc09a72473e3cdf1eb92';
 var searchIn = document.querySelector("#search-bar");
 var searchBtn=document.querySelector('#submit-btn');
 var searchEl= document.getElementById('search-card');
-var todayCon= document.querySelector('.jumbotron jumbotron-fluid')
+var todayCon= document.querySelector('.lead')
 var foreCon= document.getElementsByClassName('forecast-container')
 var searchsCon= document.querySelector('.search-history')
 var url= `https://api.openweathermap.org/data/2.5/weather?q=`
@@ -27,6 +27,15 @@ function getWeather(){
     fetch (weatherUrl).then((response)=> response.json())
     .then((data)=>{
         console.log(data)
+        var temp= data.main;
+        var hum= data.main.humidity;
+        var weather= data.weather[0].description;
+        console.log (temp);
+        console.log (weather);
+        todayCon.append(`
+        Temperature: ${temp.temp}, 
+        Conditions: ${weather}, 
+        Humidity: ${hum}`);
     });
 
 
