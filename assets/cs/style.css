@@ -2,4 +2,34 @@
     font-family: 'Courier New', Courier, monospace;
     box-sizing: border-box;
     font-size: 16px ; 
+    padding: 0px;
+    margin: 0px;
+}
+
+:root {
+    --blue: rgb(57, 167, 251);
+    --gray: rgb(167, 167, 167);
+    --white: rgb(255, 255, 255);
+}
+
+main{
+    display:flex;
+    flex-direction: row;
+    align-content: space-between;
+}
+
+aside container{
+    background-color: var(--gray);
+    padding: 0px;
+    
+}
+
+.forecast-container{
+    display:flex;
+    flex-direction: row;
+}
+
+.header {
+   text-align : center;
+   background-color:var(--blue);
 }

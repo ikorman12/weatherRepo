@@ -13,22 +13,23 @@
     <header>
     <h1 class="header">Weather</h1>
     </header>
+<main>
+    <div id="search-card" class="card col-3">
+        <h2>Search for a City:</h2>
+        <input id="search-bar" type="text" placeholder="Enter a City">
+        <input id="submit-btn" type="submit" class="btn btn-primary" value="Search">
+        <hr>
+    <div class="search-history flex-column"></div>
+    </div>
+    </div>
     <aside>
         <div class="jumbotron jumbotron-fluid">
             <div class="container">
               <h1 class="display-4">Forecast for today</h1>
               <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
             </div>
-            <div id="search-card" class="card col-3">
-                <h2>Search for a City:</h2>
-                <input id="search-bar" type="text" placeholder="Enter a City">
-                <input id="submit-btn" type="submit" class="btn btn-primary" value="Search">
-              <hr>
-              <div class="search-history flex-column"></div>
-            </div>
-          </div>
-    </aside>
-    <main>
+</main>
+    <aside>
         <div class="forecast-container">
             <h3>5-Day Forecast:</h3>
             <div id="card-container" class="d-flex flex-wrap justify-content-around">
@@ -64,7 +65,7 @@
               </div>
             </div>
           </div>
-    </main>
+    </aside>
 </body>
 
 <script src="./assets/js/script.js"></script>
