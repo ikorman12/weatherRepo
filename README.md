@@ -31,7 +31,7 @@ This app is for those who want accurate weather data at the palm of their hands 
 -[Live-deployment](https://ikorman12.github.io/weatherRepo/)
 
 ## Screenshots
-![Landing-Page](./assets/images/Screen%20Shot%202022-11-05%20at%205.17.40%20PM.png)
+![Landing-Page](./assets/images/Screen%20Shot%202022-11-06%20at%207.01.30%20PM.png)
 
 ## Future
 Future implementations of this app is to add map data to areas on top of the wetaher data such as what is good in the area etc. Suggestions for places and things to do in the area that is searched.

@@ -5,7 +5,8 @@ var searchBtn=document.querySelector('#submit-btn');
 var searchEl= document.getElementById('search-card');
 var todayCon= document.querySelector('.lead')
 var foreCon= document.getElementById('card-container');
-var searchsCon= document.querySelector('.search-history')
+var searchsCon= document.querySelector('.search-history');
+var jumbo = document.querySelector('.title');
 var url= `https://api.openweathermap.org/data/2.5/weather?q=`
 
 function getWeather(){
@@ -14,15 +15,13 @@ function getWeather(){
     fetch (weatherUrl).then((response)=> response.json())
     .then((data)=>{
         console.log(data)
-        var temp= data.main;
+        var temp= data.main.temp;
         var hum= data.main.humidity;
         var weather= data.weather[0].description;
-        console.log (temp);
-        console.log (weather);
-        todayCon.append(`
-        Temperature: ${temp.temp}, 
-        Conditions: ${weather}, 
-        Humidity: ${hum}`);
+        var name= data.name;
+        // jumbo.innerHTML=`Current weather for ${name} is:`;
+        todayCon.append(
+        ` Area: ${name}\n Temperature: ${temp}\n Conditions: ${weather}\n Humidity: ${hum}`)
     });
     getForecast();
 }

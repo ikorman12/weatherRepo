@@ -18,9 +18,9 @@ main{
     align-content: space-between;
 }
 
-aside container{
-    background-color: var(--gray);
+aside {
     padding: 0px;
+    text-align: center;
     
 }
 
@@ -32,4 +32,8 @@ aside container{
 .header {
    text-align : center;
    background-color:var(--blue);
+}
+
+#search-card {
+    text-align:center;
 }
